@@ -2,6 +2,14 @@
   "name": "@atlas-oracle/pull-oracle-consumer-sdk",
   "version": "1.0.1",
   "description": "Pull Oracle Consumer TypeScript SDK",
+  "homepage": "https://github.com/oracle-atlas/pull-oracle-consumer-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oracle-atlas/pull-oracle-consumer-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oracle-atlas/pull-oracle-consumer-sdk/issues"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

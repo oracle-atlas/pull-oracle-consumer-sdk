@@ -1,0 +1,67 @@
+{
+  "name": "@atlas-oracle/pull-oracle-consumer-sdk",
+  "version": "1.0.0",
+  "description": "Pull Oracle Consumer TypeScript SDK",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests --no-error-on-unmatched-pattern",
+    "format": "prettier --write .",
+    "release": "auto shipit",
+    "version:check": "auto version",
+    "changelog": "auto changelog",
+    "labels:create": "auto create-labels"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "peerDependencies": {
+    "ws": "^8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ws": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.13",
+    "auto": "^11.3.6",
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.15.0",
+    "vitest": "^2.1.0",
+    "ws": "^8.18.0"
+  },
+  "license": "BUSL-1.1"
+}

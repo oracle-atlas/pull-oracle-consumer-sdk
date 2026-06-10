@@ -1,0 +1,11 @@
+{
+  "owner": "oracle-atlas",
+  "repo": "pull-oracle-consumer-sdk",
+  "baseBranch": "main",
+  "name": "github-actions[bot]",
+  "email": "41898282+github-actions[bot]@users.noreply.github.com",
+  "plugins": [
+    "npm",
+    "released"
+  ]
+}
